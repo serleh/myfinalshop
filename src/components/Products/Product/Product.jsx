@@ -19,7 +19,7 @@ const Product = ({product}) => {
                     </Typography>
                 </div>
             </CardContent>
-            <CardActions diasbleSpacing className={classes.CardActions}>
+            <CardActions disableSpacing className={classes.CardActions}>
                 <IconButton aria-label='Add to cart'>
                     <AddShoppingCart/>
                 </IconButton>
