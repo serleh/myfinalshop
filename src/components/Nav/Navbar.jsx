@@ -4,7 +4,7 @@ import {AppBar,Toolbar,IconButton,Badge,MenuItem,Menu,Typography} from '@materia
 import useStyles from './styles';
 
 
-const Navbar = () => {
+const Navbar = ({totalCarts}) => {
     const classes = useStyles();
     return (
         <div>
@@ -17,7 +17,7 @@ const Navbar = () => {
                     <div className={classes.grow} />
                     <div className={classes.button}>
                         <IconButton aria-label='Show cart items' color="inherit">
-                            <Badge badgeContent={2} color="secondary">
+                            <Badge badgeContent={totalCarts} color="secondary">
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
